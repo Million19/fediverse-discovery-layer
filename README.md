@@ -67,18 +67,18 @@ Unlike traditional RAG systems that treat posts as isolated text chunks, this pr
 
 ## 🛠️ Internal Development Workflow & Quality Control
 
-To guarantee absolute codebase reliability, strict data hygiene, and "First-Run Success," the engineering lifecycle of this project integrates a localized, LLM-assisted development pipeline. Rather than writing code blindly against speculative API behaviors, two specialized developer-side sub-agents are utilized to enforce strict context isolation and run empirical environment audits before any production logic is integrated into the repository.
+To guarantee absolute codebase reliability, strict data hygiene, and "First-Run Success," the engineering lifecycle of this project integrates a localized, LLM-assisted development pipeline. Rather than writing code blindly against speculative API behaviors, automated developer-side context utilities and empirical environment audits are utilized before any production logic is integrated into the repository.
 
 The underlying data and inference engines (**Ollama, LlamaIndex, LanceDB, and NetworkX**) are not passive placeholders; they are surgically selected via domain-specific technical triage as the mathematically optimal, resource-efficient stack to support client-side, in-process execution constraints.
 
-### 1. The Agentic Context Controlling Agent (ACCA)
-The ACCA functions natively within the developer environment as an automated context bouncer and librarian to optimize prompt efficiency.
-* **Mechanism:** The utility intercepts development prompts, analyzes the micro-requirements of the assigned task, and perfectly curates the context window. It systematically scrubs the prompt of irrelevant codebase files, redundant structural schemas, and focus-diluting noise while querying our code map to dynamically append missing dependencies and required architectural linkages.
-* **Impact:** This directly neutralizes token-level context bloat and context window explosion. By keeping the local model's attention span focused exclusively on atomic coding boundaries, it completely eliminates logic hallucinations and allows highly efficient local models to generate components with 100% contextual accuracy.
+### 1. Automated Context Optimization & Prompt Hygiene
+An automated context curation utility functions natively within the development environment to maximize prompt efficiency.
+* **Mechanism:** The utility evaluates engineering prompts, analyzes the exact micro-requirements of the assigned task, and curates the active context window. It systematically scrubs the prompt of irrelevant codebase files, redundant structural schemas, and focus-diluting noise while querying our code map to dynamically append missing dependencies and required architectural linkages.
+* **Impact:** This directly neutralizes token-level context bloat and context window explosion. By keeping the language model's attention span focused exclusively on atomic coding boundaries, it completely eliminates logic hallucinations and allows highly efficient local models to generate components with 100% contextual accuracy.
 
-### 2. The Agentic Probe Explorer Agent (The Mechanical Sentry)
-Operating under a philosophy of "Defensive Paranoia," this sub-agent acts as an adversarial scout to eliminate hidden environmental assumptions before software assembly begins.
-* **Mechanism:** Before any production application code is drafted, this mechanism audits the immediate technical requirements. It identifies unverified environmental variables, performs an active pre-mortem to map breaking points, and executes tiny, non-mocked throwaway sandbox scripts (probes) directly against live target environments, network routes, and real-world ActivityPub JSON-LD payloads.
+### 2. Automated Sandbox Probes & Environment Discovery
+Operating under a strict philosophy of engineering verification, automated discovery scripts are executed to eliminate hidden environmental assumptions before software assembly begins.
+* **Mechanism:** Before any production application code is drafted, these discovery scripts audit the immediate technical requirements. The framework identifies unverified environmental variables, performs an active pre-mortem to map breaking points, and executes tiny, non-mocked throwaway sandbox scripts (probes) directly against live target environments, network routes, and real-world ActivityPub JSON-LD payloads.
 * **Impact:** This completely replaces brittle "Happy Path" coding with empirical verification. It captures raw payload data schemas, CORS boundaries, and instance-level rate limits before integration. This eliminates hallucinated mock-data variables and guarantees that the compiled application interfaces flawlessly with the live network on the very first execution.
 
 
