@@ -97,23 +97,15 @@ To prevent local graph and vector stores from bloating and exhausting consumer h
 
 
 
-## 🔬 The "White Space" (Novelty Verification)
+## 🔬 The "White Space" (Architectural Novelty Verification)
 
+Extensive competitive analysis and open-source intelligence (OSINT) have identified a critical **Hybrid Gap** at the intersection of local-first LLM applications and decentralized networking protocol layers. The **fediverse-discovery-layer** establishes a distinct technical boundary against existing efforts:
 
+* **vs. BYOTA (Mozilla.ai):** BYOTA performs basic semantic re-ranking but treats social posts as isolated, flat vector text chunks. It completely lacks a relational graph backend, making it architecturally incapable of executing topological multi-hop reasoning, tracking native conversation trees, or utilizing network centrality weights to calculate user trust.
+* **vs. openEngiadina:** openEngiadina is a semantic publishing framework designed for the structured generation and interlinking of data profiles (pushing data out). This project addresses the inverse paradigm: the automated real-time background ingestion, sanitization, and natural language synthesis of unstructured, high-velocity streaming content (pulling data in).
+* **vs. Centralized Architectures (Algolia/Elasticsearch):** Traditional search engines require constant, privacy-invasive data synchronization to a monolithic, cloud-hosted master index. This project completely replaces that model with an in-process, serverless zero-knowledge edge architecture, ensuring no user profile or timeline data ever leaves personal hardware.
 
-Extensive OSINT research and competitive analysis have identified a specific **Hybrid Gap**.
-
-
-
-* **BYOTA (Mozilla.ai):** Performs semantic search but lacks relational reasoning via graphs.
-
-* **openEngiadina:** Focuses on publishing structured data but lacks automated synthesis of unstructured streams.
-
-* **Centralized Search (Algolia/Elastic):** Requires data synchronization to a central index, creating a privacy honeypot.
-
-
-
-The **fediverse-discovery-layer** is unique in its combination of local-only hybrid Graph/Vector DBs for multi-hop reasoning on real-time decentralized social streams.
+By implementing a local hybrid Graph/Vector pipeline that pairs Reciprocal Rank Fusion (RRF) with an automated normalization engine, this project represents a net-new capability for autonomous discovery on the decentralized web.
 
 
 
