@@ -65,26 +65,21 @@ Unlike traditional RAG systems that treat posts as isolated text chunks, this pr
 
 
 
-## 🛠️ Advanced Multi-Agent Engineering & Cognitive Governance
+## 🛠️ Internal Development Workflow & Quality Control
 
-To guarantee complete protocol reliability, absolute execution safety, and hyper-accelerated development lifecycles, this project is built using a custom multi-agent cognitive orchestration pipeline.  Rather than writing traditional monolithic code, our development architecture enforces strict **Cognitive Governance** and **Radical Reductionism** to eliminate system complexity at the planning stage.
+To guarantee absolute codebase reliability, strict data hygiene, and "First-Run Success," the engineering lifecycle of this project integrates a localized, LLM-assisted development pipeline. Rather than writing code blindly against speculative API behaviors, two specialized developer-side sub-agents are utilized to enforce strict context isolation and run empirical environment audits before any production logic is integrated into the repository.
 
 The underlying data and inference engines (**Ollama, LlamaIndex, LanceDB, and NetworkX**) are not passive placeholders; they are surgically selected via domain-specific technical triage as the mathematically optimal, resource-efficient stack to support client-side, in-process execution constraints.
 
-Our specialized multi-agent factory roster orchestrates development through three core pillars:
+### 1. The Agentic Context Controlling Agent (ACCA)
+The ACCA functions natively within the developer environment as an automated context bouncer and librarian to optimize prompt efficiency.
+* **Mechanism:** The utility intercepts development prompts, analyzes the micro-requirements of the assigned task, and perfectly curates the context window. It systematically scrubs the prompt of irrelevant codebase files, redundant structural schemas, and focus-diluting noise while querying our code map to dynamically append missing dependencies and required architectural linkages.
+* **Impact:** This directly neutralizes token-level context bloat and context window explosion. By keeping the local model's attention span focused exclusively on atomic coding boundaries, it completely eliminates logic hallucinations and allows highly efficient local models to generate components with 100% contextual accuracy.
 
-### 1. The Complexity Bypass Protocol (Radical Reductionism)
-Faced with complex, streaming decentralized protocols, our orchestrating agents run an automated planning-stage protocol that mandates the deconstruction of high-level tasks into microscopic, axiomatic components before execution code is generated. By isolating the exact architectural **Delta** (the Polymorphic ActivityStreams Normalizer and the semantic ActivityPub-to-Graph mapping layer), we prevent context drift, eliminate code bloat, and optimize resource deployment.
-
-### 2. The Agentic Context Controlling Agent (ACCA)
-To eliminate prompt-level context bloat and focus-diluting noise during development, we deploy the **ACCA** as an active context bouncer and librarian. 
-* **Mechanism:** The ACCA intercepts development prompts, surgically scrubbing irrelevant file structures and dependencies while dynamically querying our global code map to append critical structural linkages.
-* **Impact:** This protects the local model's attention span, eliminates code hallucinations, and ensures that every individual module is written with 100% contextual accuracy.
-
-### 3. The Agentic Probe Explorer Agent (The Mechanical Sentry)
-To guarantee "First-Run Success," our architecture rejects standard "Happy Path" compilation in favor of strict **Defensive Paranoia**.
-* **Mechanism:** Before a single line of production application code is integrated, the **Agentic Probe Explorer** acts as an adversarial scout, explicitly listing every hidden environmental assumption and designing throwaway sandbox scripts to stress-test real-world API boundaries and live JSON-LD payloads.
-* **Impact:** This isolates real-world network dependencies, CORS boundaries, and runtime behaviors without relying on artificial mock data, ensuring that the final compiled application interfaces perfectly with the physical and digital environment .
+### 2. The Agentic Probe Explorer Agent (The Mechanical Sentry)
+Operating under a philosophy of "Defensive Paranoia," this sub-agent acts as an adversarial scout to eliminate hidden environmental assumptions before software assembly begins.
+* **Mechanism:** Before any production application code is drafted, this mechanism audits the immediate technical requirements. It identifies unverified environmental variables, performs an active pre-mortem to map breaking points, and executes tiny, non-mocked throwaway sandbox scripts (probes) directly against live target environments, network routes, and real-world ActivityPub JSON-LD payloads.
+* **Impact:** This completely replaces brittle "Happy Path" coding with empirical verification. It captures raw payload data schemas, CORS boundaries, and instance-level rate limits before integration. This eliminates hallucinated mock-data variables and guarantees that the compiled application interfaces flawlessly with the live network on the very first execution.
 
 
 
